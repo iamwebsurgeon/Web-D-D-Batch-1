@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Learning Animations</title>
+	<style>
+		@keyframes boxRotate{
+			0%{
+				background-color: red;
+			}
+			50%{
+				background-color: purple;
+				transform:  translate(125%) rotate(180deg) scale(0.2);
+				border-radius:50%;
+			}
+			100%{
+				background-color: yellow;
+				transform: translate(250%);
+			}
+		}
+
+		.box{
+			height: 300px;
+			width: 300px;
+			background-color: red;
+			animation-name: boxRotate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		
+	</div>
+</body>
+</html>
