@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jump Statements</title>
+</head>
+<body>
+	
+
+	<script>
+		var sum2 = 5;
+
+		for(var a = 1; a<=10; a++){
+			if(a == 7){
+				continue;
+			}
+			document.write(a + "<br>");
+		}
+
+		function myBioData(firstName, lastName, edu, address, cast, lang, cont, email){
+			document.write("First Name: " + firstName + " <br>");
+			document.write("Last Name: " + lastName + " <br>");
+			document.write("Education: " + edu + " <br>");
+			document.write("Address: " + address + " <br>");
+			document.write("Cast: " + cast + "<br>");
+			document.write("Language: " + lang + "<br>");
+			document.write("Contact #: " + cont + "<br>");
+			document.write("Email: " + email + "<br>");
+
+		}
+
+		myBioData("Asad", 'Zia', 'BS', 'Bwp', 'Rajpot', 'Urdu',  '031212311', 'asadzia@gmail.com');
+
+		function addition(a,b){
+			var sum2 = a + b;
+			document.write(sum2 + "<br><br><br>");
+		}
+		addition(3,6);
+
+		function myFunc(){
+			return null;
+		}
+
+		myFunc();
+
+		var f = function(){
+			document.write("Hello I am annonymous function");
+		}
+
+
+		f();
+
+		var ar = () => {
+			document.write("I am a Arrow Function.");
+		}
+
+		ar();
+
+		//document.write(sum2);
+
+
+
+	</script>
+</body>
+</html>
